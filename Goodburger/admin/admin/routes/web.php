@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Config;
 
@@ -28,7 +29,9 @@ Route::get('/clear-cache', function() {
 });
 
 Route::get('/phpinfo', function() {
+    
     echo phpinfo();
+
 });
 
 Route::get('/install', 'InstallController@install2');
